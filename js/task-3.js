@@ -1,13 +1,13 @@
 function getElementWidth(content, padding, border) {
-    // px değerlerinden sayıları çıkaralım
+    // for px problem: convert to number 
     let contentWidth = parseFloat(content);
     let paddingWidth = parseFloat(padding);
     let borderWidth = parseFloat(border);
 
-    // toplam genişlik
+    // total width
     let totalWidth = contentWidth + (2 * paddingWidth) + (2 * borderWidth);
 
-    // toplam genişliği döndürelim
+    // return
     return totalWidth;
 
 }
